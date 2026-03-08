@@ -1,0 +1,112 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:system-ui, -apple-system, sans-serif;
+}
+
+body{
+background:#f6f7fb;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+padding:20px;
+}
+
+.app{
+background:white;
+width:100%;
+max-width:420px;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+font-size:24px;
+}
+
+.task-input{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+.task-input input{
+flex:1;
+padding:10px 12px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+.task-input button{
+background:#111;
+color:white;
+border:none;
+padding:10px 16px;
+border-radius:8px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.task-input button:hover{
+opacity:0.85;
+}
+
+ul{
+list-style:none;
+}
+
+li{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px;
+border-radius:8px;
+margin-bottom:8px;
+background:#f3f4f6;
+font-size:14px;
+transition:0.2s;
+}
+
+li:hover{
+background:#e9ebef;
+}
+
+.completed span{
+text-decoration:line-through;
+opacity:0.6;
+}
+
+.task-actions{
+display:flex;
+gap:8px;
+}
+
+.delete-btn{
+background:none;
+border:none;
+font-size:16px;
+cursor:pointer;
+}
+
+.check{
+cursor:pointer;
+margin-right:8px;
+}
+
+@media (max-width:500px){
+
+.app{
+padding:20px;
+}
+
+h1{
+font-size:20px;
+}
+
+}
